@@ -1,11 +1,12 @@
 <template>
     <div class="header">
-        <!-- 折叠按钮 -->
-        <div class="collapse-btn" @click="collapseChage">
-            <i v-if="!collapse" class="el-icon-s-fold"></i>
-            <i v-else class="el-icon-s-unfold"></i>
+        <div class="logo">
+          <img src="../../../assets/DNF.png" />
+          <span>
+            装逼管理系统
+          </span>
         </div>
-        <div class="logo">装逼管理系统</div>
+
         <div class="header-right">
             <div class="header-user-con">
                 <!-- 全屏显示 -->
@@ -72,11 +73,6 @@ export default {
 
             }
         },
-        // 侧边栏折叠
-        collapseChage() {
-            this.collapse = !this.collapse;
-            bus.$emit('collapse', this.collapse);
-        },
         // 全屏事件
         handleFullScreen() {
             let element = document.documentElement;
@@ -121,12 +117,7 @@ export default {
     font-size: 22px;
     color: #fff;
 }
-.collapse-btn {
-    float: left;
-    padding: 0 21px;
-    cursor: pointer;
-    line-height: 70px;
-}
+
 .header .logo {
     float: left;
     width: 250px;
@@ -174,11 +165,22 @@ export default {
 .user-avator {
     margin-left: 20px;
 }
-.user-avator img {
+.user-avator img{
     display: block;
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+.logo  img{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 8px;
+  margin-left: 15px;
+}
+.logo span{
+  margin-left: 70px;
 }
 .el-dropdown-link {
     color: #fff;

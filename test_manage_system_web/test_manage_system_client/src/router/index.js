@@ -8,16 +8,18 @@ export default new Router({
     {
       path: '/',
       component: () => import(/* webpackChunkName: "home" */ '@/components/common/base/Home.vue'),
-      meta: { title: '自述文件' },
-      children:[{
-        path: '/dashboard',
-        component: () => import('@/components/view/index/Dashboard'),
-        meta: { title: '系统首页' }
-      },{
-        path: '/test',
-        component: () => import('@/components/view/test'),
-        meta: { title: '调试调试' }
-      }
+      meta: {title: '自述文件'},
+      children: [
+        {
+          path: '/dashboard',
+          component: () => import('@/components/view/index/index'),
+          meta: {title: '系统首页'}
+        },
+        {
+          path: '/test',
+          component: () => import('@/components/view/test'),
+          meta: {title: '调试调试'}
+        }
       ]
     },
   ]

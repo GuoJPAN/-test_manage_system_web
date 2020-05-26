@@ -40,7 +40,7 @@
       <button class="btn try" @click="changeWidth">点我试试?</button>
     </drawer>
 
-    <el-button>出来</el-button>
+    <el-button @click="showDrawer">出来啦</el-button>
   </div>
 </template>
 
@@ -57,6 +57,9 @@
     methods: {
       changeWidth () {
         this.drawerWidth = (this.drawerWidth === '500px') ? '800px' : '500px'
+      },
+      showDrawer () {
+        this.display = !this.display
       }
     },
     components: {

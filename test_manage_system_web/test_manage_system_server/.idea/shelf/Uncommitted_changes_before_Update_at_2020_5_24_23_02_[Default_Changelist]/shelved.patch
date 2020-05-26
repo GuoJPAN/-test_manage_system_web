@@ -1,0 +1,62 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"9748d8a5-13df-4d02-ab97-2834ec0ff0fc\" name=\"Default Changelist\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/data_manage/urls.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/../..\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1cMGiJXz7cojSZuJiJpfbVLYbiW\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"ASKED_ADD_EXTERNAL_FILES\" value=\"true\" />\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"configurable.group.appearance\" />\r\n    <property name=\"settings.editor.splitter.proportion\" value=\"0.2\" />\r\n  </component>\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration />\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"9748d8a5-13df-4d02-ab97-2834ec0ff0fc\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1590331174121</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1590331174121</updated>\r\n      <workItem from=\"1590331175360\" duration=\"974000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"django后台，只是Django跑通了，没有写视图模型\">\r\n      <created>1590332048701</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1590332048701</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"2\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"django后台，只是Django跑通了，没有写视图模型\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"django后台，只是Django跑通了，没有写视图模型\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"558\" y=\"90\" key=\"CommitChangelistDialog2\" timestamp=\"1590332175012\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"558\" y=\"90\" key=\"CommitChangelistDialog2/1920.105.1536.832/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1590332175012\" />\r\n    <state x=\"755\" y=\"435\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" timestamp=\"1590332276730\">\r\n      <screen x=\"0\" y=\"0\" width=\"1920\" height=\"1040\" />\r\n    </state>\r\n    <state x=\"755\" y=\"435\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.105.1536.832/0.0.1920.1040@0.0.1920.1040\" timestamp=\"1590332276730\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 544a4c9a768511a5704d7b3ab850dec90ded6a50)
++++ .idea/workspace.xml	(date 1590332516355)
+@@ -1,9 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="9748d8a5-13df-4d02-ab97-2834ec0ff0fc" name="Default Changelist" comment="">
+-      <change afterPath="$PROJECT_DIR$/data_manage/urls.py" afterDir="false" />
+-    </list>
++    <list default="true" id="9748d8a5-13df-4d02-ab97-2834ec0ff0fc" name="Default Changelist" comment="" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -47,7 +45,7 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1590331174121</updated>
+-      <workItem from="1590331175360" duration="974000" />
++      <workItem from="1590331175360" duration="1340000" />
+     </task>
+     <task id="LOCAL-00001" summary="django后台，只是Django跑通了，没有写视图模型">
+       <created>1590332048701</created>
+@@ -56,7 +54,21 @@
+       <option name="project" value="LOCAL" />
+       <updated>1590332048701</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="test">
++      <created>1590332176356</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1590332176356</updated>
++    </task>
++    <task id="LOCAL-00003" summary="test">
++      <created>1590332346210</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1590332346210</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -65,7 +77,8 @@
+   <component name="VcsManagerConfiguration">
+     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+     <MESSAGE value="django后台，只是Django跑通了，没有写视图模型" />
+-    <option name="LAST_COMMIT_MESSAGE" value="django后台，只是Django跑通了，没有写视图模型" />
++    <MESSAGE value="test" />
++    <option name="LAST_COMMIT_MESSAGE" value="test" />
+   </component>
+   <component name="WindowStateProjectService">
+     <state x="558" y="90" key="CommitChangelistDialog2" timestamp="1590332175012">

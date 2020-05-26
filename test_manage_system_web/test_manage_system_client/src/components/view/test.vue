@@ -34,9 +34,36 @@
         </el-card>
       </el-col>
     </el-row>
+    <drawer title="Hello, I'm drawer" :display.sync="display" :width="drawerWidth">
+      <p>1. Hello, world!</p>
+      <p>2. Do you like it?</p>
+      <button class="btn try" @click="changeWidth">点我试试?</button>
+    </drawer>
+
+    <el-button>出来</el-button>
   </div>
 </template>
 
+<script>
+  import drawer from '../../components/common/drawer'
+  export default {
+    data() {
+      return {
+        currentDate: new Date(),
+        display: false,
+        drawerWidth: '500px'
+      };
+    },
+    methods: {
+      changeWidth () {
+        this.drawerWidth = (this.drawerWidth === '500px') ? '800px' : '500px'
+      }
+    },
+    components: {
+      drawer
+    },
+  }
+</script>
 
 <style>
   .myContainer{
@@ -76,13 +103,3 @@
     clear: both
   }
 </style>
-
-<script>
-  export default {
-    data() {
-      return {
-        currentDate: new Date()
-      };
-    }
-  }
-</script>

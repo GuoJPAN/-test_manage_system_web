@@ -16,6 +16,11 @@ export default new Router({
           meta: {title: '系统首页'}
         },
         {
+          path: '/showEcharts',
+          component: () => import('@/components/view/showEcharts/index_echarts'),
+          meta: {title: '系统首页'}
+        },
+        {
           path: '/test',
           component: () => import('@/components/view/test'),
           meta: {title: '调试调试'}

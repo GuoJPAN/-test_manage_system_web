@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h2 style="margin-bottom: 40px;text-align: center;border-bottom: #409EFF 5px solid;padding-bottom: 5px">一个div显示多个echarts图，浏览器窗口大小改变之后重新绘制echarts图</h2>
-    <div id="myChart" style="width: 100%;height: 650px"></div>
+    <h2 style="margin-bottom: 40px;text-align: center;border-bottom: #409EFF 5px solid;padding-bottom: 5px">一个div显示多个echarts图，浏览器窗口大小改变之后重新绘制echarts图（自适应）</h2>
+    <div class="myChart" style="width: 100%;height: 650px" ref="chart"></div>
   </div>
 </template>
 
@@ -154,7 +154,19 @@
 
       drawLine() {
         // 这里是实例化一个echarts对象并且初始化上面创建好的dom
-        let myChart = this.$echarts.init(document.getElementById('myChart'))
+        // let myChart = this.$echarts.init(document.getElementById('myChart'))
+        var charts = this.$refs.chart;
+        if (charts) {
+          let myChart = this.$echarts.init(charts)
+          myChart.setOption(option)
+
+          // 浏览器窗口大小改变，重新绘制图表
+          window.onresize = () => {
+            myChart.resize();
+          }
+        } else {
+          console.log('charts不能为空')
+        }
         // 制作图标的具体实现
         // myChart.setOption({
         //   title: {text: '在Vue中使用echarts'},
@@ -170,11 +182,7 @@
         //     //略。。。
         //   }]
         // });
-        myChart.setOption(option)
-        // 浏览器窗口大小改变，重新绘制图表
-        window.onresize = () => {
-          myChart.resize();
-        }
+
       }
     }
   }

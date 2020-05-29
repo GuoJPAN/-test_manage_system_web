@@ -66,8 +66,18 @@
           },
           {
             icon: 'el-icon-lx-home',
-            index: 'showEcharts',
-            title: 'echarts图表'
+            index: '2',
+            title: 'echarts图表',
+            subs: [
+              {
+                index: 'showEcharts',
+                title: '一个div多个echarts图'
+              },
+              {
+                index: 'showTabEcharts',
+                title: 'tab页echarts'
+              },
+            ]
           },
           {
             icon: 'el-icon-lx-copy',

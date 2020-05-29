@@ -18,7 +18,12 @@ export default new Router({
         {
           path: '/showEcharts',
           component: () => import('@/components/view/showEcharts/index_echarts'),
-          meta: {title: '系统首页'}
+          meta: {title: '一个div多个echarts图'}
+        },
+        {
+          path: '/showTabEcharts',
+          component: () => import('@/components/view/showEcharts/tab_echarts'),
+          meta: {title: 'tab页echarts'}
         },
         {
           path: '/test',

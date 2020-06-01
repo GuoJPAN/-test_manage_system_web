@@ -18,7 +18,7 @@ from django.urls import path
 from data_manage.views import * 
 
 urlpatterns = [
-    path('^index/', hello),
+    path('index/', hello),
     path('admin/', admin.site.urls),
     path('test/', test)
 ]

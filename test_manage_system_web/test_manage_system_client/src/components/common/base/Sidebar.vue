@@ -80,6 +80,17 @@
             ]
           },
           {
+            icon: 'el-icon-lx-home',
+            index: '3',
+            title: '随便写写',
+            subs: [
+              {
+                index: 'docIndex',
+                title: '随便首页'
+              }
+            ]
+          },
+          {
             icon: 'el-icon-lx-copy',
             index: 'test',
             title: '调试调试'

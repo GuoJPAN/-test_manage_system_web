@@ -26,6 +26,11 @@ export default new Router({
           meta: {title: 'tab页echarts'}
         },
         {
+          path: '/docIndex',
+          component: () => import('@/components/view/doc/docIndex'),
+          meta: {title: 'tab页echarts'}
+        },
+        {
           path: '/test',
           component: () => import('@/components/view/test'),
           meta: {title: '调试调试'}

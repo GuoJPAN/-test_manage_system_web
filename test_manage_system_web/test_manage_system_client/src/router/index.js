@@ -31,6 +31,11 @@ export default new Router({
           meta: {title: 'tab页echarts'}
         },
         {
+          path: '/myBoard',
+          component: () => import('@/components/view/doc/myBoard'),
+          meta: {title: '看板'}
+        },
+        {
           path: '/test',
           component: () => import('@/components/view/test'),
           meta: {title: '调试调试'}

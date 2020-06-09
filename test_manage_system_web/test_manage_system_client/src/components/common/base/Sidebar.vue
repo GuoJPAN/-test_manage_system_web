@@ -87,7 +87,12 @@
               {
                 index: 'docIndex',
                 title: '随便首页'
+              },
+              {
+                index: 'myBoard',
+                title: '看板'
               }
+
             ]
           },
           {

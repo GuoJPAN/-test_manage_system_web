@@ -1,23 +1,14 @@
 <template>
   <div>
     <!--按钮互斥效果-->
-    <div class="level-screening">
-      <el-button
-        size="medium"
-        type="primary"
-        :class="index==itemType?'highlight':''"
-        v-for="(item,index) in levelList"
-        :key="index"
-        @click.prevent="materTay(index,item.code)"
-      >
-        {{ item.codeValue }}
-      </el-button
-      >
-    </div>
+    <el-button @click="testReq">发请求</el-button>
   </div>
 </template>
 
 <script>
+
+  import Axios from 'axios'
+
   export default {
     data() {
       return {
@@ -58,6 +49,16 @@
         this.itemType = itemType
         // 分类的code值
         this.materialCode = code
+      },
+      testReq: function () {
+
+        Axios.post('/api/test').then((res) => {
+          console.log(res)
+        }).catch((err) => {
+
+          console.log(err)
+
+        })
       }
     }
   }

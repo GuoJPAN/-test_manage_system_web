@@ -39,6 +39,11 @@ export default new Router({
           path: '/test',
           component: () => import('@/components/view/test'),
           meta: {title: '调试调试'}
+        },
+        {
+          path: '/test002',
+          component: () => import('@/components/view/test'),
+          meta: {title: '调试调试'}
         }
       ]
     },

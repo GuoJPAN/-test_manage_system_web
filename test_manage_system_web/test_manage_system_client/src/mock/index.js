@@ -1,10 +1,10 @@
 import Mock from 'mockjs'
 
-const data={
-  "id":"@guid",
-  "name":"@cname",
-};
+const data = {
+  'id': '@guid',
+  'name': '@cname'
+}
 
 Mock.mock('/api/test', 'post', data)
 
-export default Mock;
+export default Mock

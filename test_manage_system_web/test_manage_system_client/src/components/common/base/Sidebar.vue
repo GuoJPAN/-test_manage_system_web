@@ -52,70 +52,75 @@
 </template>
 
 <script>
-  import bus from './bus';
+import bus from './bus'
 
-  export default {
-    data() {
-      return {
-        collapse: false,
-        items: [
-          {
-            icon: 'el-icon-lx-home',
-            index: 'dashboard',
-            title: '系统首页'
-          },
-          {
-            icon: 'el-icon-lx-home',
-            index: '2',
-            title: 'echarts图表',
-            subs: [
-              {
-                index: 'showEcharts',
-                title: '一个div多个echarts图'
-              },
-              {
-                index: 'showTabEcharts',
-                title: 'tab页echarts'
-              },
-            ]
-          },
-          {
-            icon: 'el-icon-lx-home',
-            index: '3',
-            title: '随便写写',
-            subs: [
-              {
-                index: 'docIndex',
-                title: '随便首页'
-              },
-              {
-                index: 'myBoard',
-                title: '看板'
-              }
+export default {
+  data () {
+    return {
+      collapse: false,
+      items: [
+        {
+          icon: 'el-icon-lx-home',
+          index: 'dashboard',
+          title: '系统首页'
+        },
+        {
+          icon: 'el-icon-lx-home',
+          index: '2',
+          title: 'echarts图表',
+          subs: [
+            {
+              index: 'showEcharts',
+              title: '一个div多个echarts图'
+            },
+            {
+              index: 'showTabEcharts',
+              title: 'tab页echarts'
+            }
+          ]
+        },
+        {
+          icon: 'el-icon-lx-home',
+          index: '3',
+          title: '随便写写',
+          subs: [
+            {
+              index: 'docIndex',
+              title: '随便首页'
+            },
+            {
+              index: 'myBoard',
+              title: '看板'
+            }
 
-            ]
-          },
-          {
-            icon: 'el-icon-lx-copy',
-            index: 'test',
-            title: '调试调试'
-          }
-        ]
-      };
-    },
-    computed: {
-      onRoutes() {
-        return this.$route.path.replace('/', '');
-      }
-    },
-    created() {
-      // 通过 Event Bus 进行组件间通信，来折叠侧边栏
-      bus.$on('collapse', msg => {
-        this.collapse = msg;
-        bus.$emit('collapse-content', msg);
-      });
+          ]
+        },
+        {
+          icon: 'el-icon-lx-copy',
+          index: 'test001',
+          title: '黑客帝国代码雨'
+        },
+        {
+          icon: 'el-icon-lx-copy',
+          index: 'test',
+          title: '调试调试'
+        }
+      ]
     }
-  };
+  },
+  computed: {
+    onRoutes () {
+      return this.$route.path.replace('/', '')
+    }
+  },
+  created () {
+    // 通过 Event Bus 进行组件间通信，来折叠侧边栏
+    bus.$on('collapse', msg => {
+      this.collapse = msg
+      bus.$emit('collapse-content', msg)
+    })
+  }
+}
 </script>
 
 <style scoped>

@@ -3,7 +3,7 @@
         <div class="logo">
           <img src="../../../assets/DNF.png" />
           <span>
-            装逼管理系统
+            for fun
           </span>
         </div>
 
@@ -68,11 +68,11 @@ export default {
   },
   methods: {
     // 用户名下拉菜单选择事件
-    // handleCommand (command) {
-    //   if (command == 'loginout') {
-
-    //   }
-    // },
+    handleCommand (command) {
+      if (command === 'loginout') {
+        console.log("注销登录！")
+      }
+    },
     // 全屏事件
     handleFullScreen () {
       let element = document.documentElement
@@ -100,12 +100,12 @@ export default {
       }
       this.fullscreen = !this.fullscreen
     }
-  },
-  mounted () {
-    if (document.body.clientWidth < 1500) {
-      this.collapseChage()
-    }
   }
+  // mounted () {
+  //   if (document.body.clientWidth < 1500) {
+  //     this.collapseChage()
+  //   }
+  // }
 }
 </script>
 <style scoped>

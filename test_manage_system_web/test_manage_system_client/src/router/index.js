@@ -44,6 +44,11 @@ export default new Router({
           path: '/test001',
           component: () => import('@/components/view/rain'),
           meta: { title: '爷爷' }
+        },
+        {
+          path: '/table',
+          component: () => import('@/components/view/table'),
+          meta: { title: '表格' }
         }
       ]
     }

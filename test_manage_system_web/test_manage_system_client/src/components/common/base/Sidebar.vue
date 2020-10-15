@@ -102,6 +102,11 @@ export default {
         },
         {
           icon: 'el-icon-lx-copy',
+          index: 'table',
+          title: '表格数据'
+        },
+        {
+          icon: 'el-icon-lx-copy',
           index: 'test',
           title: '调试调试'
         }
